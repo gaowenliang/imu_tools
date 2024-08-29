@@ -15,7 +15,6 @@ find_package(catkin REQUIRED
     std_msgs
     geometry_msgs
     nav_msgs
-    code_utils
     )
 
 ## System dependencies are found with CMake's conventions
@@ -27,9 +26,12 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${CERES_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
+  "include"
 )
 
 catkin_package()
+
+
 
 set(ACC_LIB_SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/acc_lib/allan_acc.cpp
